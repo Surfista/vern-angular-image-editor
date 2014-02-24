@@ -5,6 +5,16 @@ Depends on angular
 
 Works well with font-awesome and bootstrap styles
 
+VERN Image Editor directive
+
+Allow basic editing of images directly in the browser. Apply attribute to an img tag. 
+
+Attributes:
+`image-editor`
+`templateUrl`, the template to override the default, eg: "/path/to/template"
+`callback`, a scope function that will parse the saved data "updateFile(base64, src, type)"
+`src`, the image source, needs to have proper CORS attributes in request set
+
 # License
 
 The Affero General Public License (AGPL)

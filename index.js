@@ -6,7 +6,7 @@
  *  Allow basic editing of images directly in the browser. Apply attribute to an img tag. 
  *
  *  Attributes:
- *  image-editor, eg: "/path/to/modal/template"
+ *  image-editor
  *
  *  templateUrl, the template to override the default, eg: "/path/to/template"
  *
