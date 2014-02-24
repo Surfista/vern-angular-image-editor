@@ -1,7 +1,9 @@
-# Vern Directive
-## Modal
+# Vern AngularJS Directive
+## Image Editor
 
-Depends on angular-bootstrap
+Depends on angular
+
+Works well with font-awesome and bootstrap styles
 
 # License
 
