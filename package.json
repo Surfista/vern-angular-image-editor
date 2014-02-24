@@ -1,6 +1,6 @@
 {
   "name": "vern-angular-image-editor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An image editor directive which allows basic manipulation of an image",
   "main": "index.js",
   "scripts": {
