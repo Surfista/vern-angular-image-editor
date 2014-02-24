@@ -1,0 +1,22 @@
+<div class="img-holder">
+  <img ng-src="{{src}}">
+  <a href class="btn img-editable" ng-click="openEditor()"><span class="glyphicon glyphicon-pencil">Edit Image</span></a>
+  <div class="img-editor" ng-show="showEditor">
+    <div class="menu">
+      <div class="buttons-group">
+        <button type="button" class="btn btn-sm btn-default" ng-class="{active: showSize}" ng-click="setSizeAction(true)"><span class="resize">Resize</span></button>
+        <button type="button" class="btn btn-sm btn-default" ng-class="{active: !showSize}" ng-click="setSizeAction(false)"><span class="crop">Crop</span></button>
+      </div>
+      <div class="resize" ng-if="showSize">
+        <input type="text" class="input-sm" ng-model="size.width"> x <input type="text" class="input-sm" ng-model="size.height"> <button class="btn btn-sm btn-default" ng-class="{active: aspectRatio}" ng-click="toggleAspectRatio()"><span class="glyphicon glyphicon-lock">Lock</span></button>
+      </div>
+      <div class="crop" ng-if="!showSize">
+        <input type="text" class="input-sm" ng-model="crop.width"> x <input type="text" class="input-sm" ng-model="crop.height"> <button class="btn btn-sm btn-default" ng-class="{active: cropRatio}" ng-click="toggleCropRatio()"><span class="glyphicon glyphicon-lock">Lock</span></button>
+      </div>
+      <a href class="btn btn-xs close" ng-click="closeEditor()"><span class="glyphicon glyphicon-remove"></span> Close</a>
+      <a href class="btn btn-xs save" ng-click="saveImage()"><span class="save"></span>Save</a>
+    </div>
+    <canvas class="img-src"></canvas>
+    <div class="selection" ng-style="setCropSize()"></div>
+   </div>
+</div>

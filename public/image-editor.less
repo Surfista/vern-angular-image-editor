@@ -1,0 +1,65 @@
+@import "lesshat";
+
+.img-editable {
+  color: #4fb86c;
+  &:hover {
+    color: #35914e;
+  }
+}
+.img-editor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, .75);
+  z-index: 999;
+  overflow: scroll;
+  .menu {
+    padding: 10px;
+    line-height: normal;
+    input {
+      line-height: normal;
+      width: 50px;
+    }
+    input,
+    button {
+      vertical-align: middle;
+    }
+    > div {
+      display: inline-block;
+    }
+    .save {
+      float: right;
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 1;
+      text-shadow: 0 1px 0 #fff;
+      margin-right: 10px;
+      span {
+        margin-right: 5px;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  img {
+    .opacity(0);
+    width: auto;
+    height: auto;
+    max-height: 99999px !important;
+    max-width: 99999px !important;
+  }
+  canvas {
+    position: absolute;
+    z-index: 10;
+  }
+  .selection {
+    position: absolute;
+    z-index: 11;
+    background: rgba(170, 235, 218, .75);
+    border: 1px dashed;
+    cursor: move;
+  }
+}

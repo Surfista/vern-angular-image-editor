@@ -1,0 +1,65 @@
+.img-editable {
+  color: #4fb86c;
+}
+.img-editable:hover {
+  color: #35914e;
+}
+.img-editor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.75);
+  z-index: 999;
+  overflow: scroll;
+}
+.img-editor .menu {
+  padding: 10px;
+  line-height: normal;
+}
+.img-editor .menu input {
+  line-height: normal;
+  width: 50px;
+}
+.img-editor .menu input,
+.img-editor .menu button {
+  vertical-align: middle;
+}
+.img-editor .menu > div {
+  display: inline-block;
+}
+.img-editor .menu .save {
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: 0 1px 0 #fff;
+  margin-right: 10px;
+}
+.img-editor .menu .save span {
+  margin-right: 5px;
+}
+.img-editor .menu .save:hover {
+  text-decoration: none;
+}
+.img-editor img {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  width: auto;
+  height: auto;
+  max-height: 99999px !important;
+  max-width: 99999px !important;
+}
+.img-editor canvas {
+  position: absolute;
+  z-index: 10;
+}
+.img-editor .selection {
+  position: absolute;
+  z-index: 11;
+  background: rgba(170, 235, 218, 0.75);
+  border: 1px dashed;
+  cursor: move;
+}

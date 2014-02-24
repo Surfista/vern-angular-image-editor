@@ -1,0 +1,37 @@
+{
+  "name": "vern-angular-image-editor",
+  "version": "0.0.1",
+  "description": "An image editor directive which allows basic manipulation of an image",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:typefoo/vern-angular-image-editor.git"
+  },
+  "keywords": [
+    "image",
+    "editor",
+    "angularjs",
+    "vern"
+  ],
+  "author": {
+    "name": "uh-sem-blee, Co. | typefoo",
+    "email": "hello@typefoo.com"
+  },
+  "maintainers": [
+    {
+      "name": "jjosef",
+      "email": "john.josef@gmail.com"
+    }
+  ],
+  "license": "AGPL",
+  "bugs": {
+    "url": "https://github.com/typefoo/vern-angular-image-editor/issues"
+  },
+  "homepage": "https://github.com/typefoo/vern-angular-image-editor",
+  "devDependencies": {
+    "connect": "~2.12.0"
+  }
+}
