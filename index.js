@@ -8,7 +8,7 @@
  *  Attributes:
  *  image-editor, eg: "/path/to/modal/template"
  *
- *  templateOverrideUrl, the template to override the default, eg: "/path/to/template"
+ *  templateUrl, the template to override the default, eg: "/path/to/template"
  *
  *  callback, a scope function that will parse the saved data "updateFile(base64, src, type)"
  *
@@ -27,8 +27,8 @@ angular.module('vern.imageEditor', [])
       scope: {src: '@', callback: '&callback'},
       templateUrl: function(tElement, tAttr) {
         tURL = defaultTemplateUrl;
-        if(tAttr.templateOverrideUrl) {
-          tURL = tAttr.templateOverrideUrl;
+        if(tAttr.templateUrl) {
+          tURL = tAttr.templateUrl;
         }
         return tURL;
       },
